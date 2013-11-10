@@ -1,0 +1,15 @@
+Roadmap:
+
+To be implemented:
+
+Runge-Kutta iteration
+Description: implement the higher-order function that performs
+an iteration of runge-kutta given a position, a current time, a timestep
+and a function that represents the derivative of the function we are
+attempting to approximate [should work for an arbitrary # of arguments]
+
+Functions for the derivative
+Description: implement the whatchamacallit function we're supposed to use
+
+Business logic
+Description: the "put everything together" part of things
