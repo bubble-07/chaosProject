@@ -1,6 +1,6 @@
 %General RungeKutta method
 
-function varargout = RungeKutta(deltat, tott, x, y, z, varargin)
+function [allx, ally, allz, allt] = RungeKutta(deltat, tott, x, y, z, varargin)
 %RungeKutta is a generic RungeKutta procedure.
 %The format is: {ending position} = RungeKutta(timestep, total time,
 %initial x position, initial y position, initial z position, differential
@@ -42,4 +42,5 @@ for t = 0: deltat: tott
         allz(i) = z;
     end
 end
+allt = deltat : deltat : tott;
 end
