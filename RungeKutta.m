@@ -15,7 +15,7 @@ for t = 0: deltat: tott
     k1 = F(X, t) * deltat;
     k2 = F(X .+ .5 * k1, t + .5 * deltat) * deltat; 
     k3 = F(X .+ .5 * k2, t + .5 * deltat) * deltat;
-    k4 = F(X .+ k2, t + deltat) * deltat;
+    k4 = F(X .+ k3, t + deltat) * deltat;
     X = X + (1/6) * k1 + (1/3) * k2 + (1/3) * k3 + (1/6) * k4;
     allPoints = [allPoints; [X, t]];
 end
